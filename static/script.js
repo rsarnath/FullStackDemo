@@ -37,13 +37,13 @@ function displayBooks() {
     const bookList = document.getElementById('bookList');
     bookList.innerHTML = ''; // Clear existing book list
 
-    books.forEach(book => {
+     
         const bookElement = document.createElement('div');
         bookElement.innerHTML = `
-            <h2>Added Successfully :${book.title}</h2>
+            <h2>Added Successfully</h2>
         `;
         bookList.appendChild(bookElement);
-    });
+    
 }
 // Function to fetch and display all books from the server
 function showAllBooks() {
