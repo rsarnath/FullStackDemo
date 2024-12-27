@@ -7,7 +7,7 @@ books = ["book1"];
 
 @app.route('/api/books', methods=['GET'])
 def get_all_books_v2():
-    return jsonify(books)
+    return jsonify({'list of books':books})
 
 
 # API to add a book to the database
