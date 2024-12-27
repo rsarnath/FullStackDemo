@@ -1,3 +1,6 @@
+// Array to store book data
+const books = [];
+
 // Function to add a book to the list and send it to the server
 function addBook() {
     const bookTitle = document.getElementById('bookTitle').value;
@@ -37,13 +40,13 @@ function displayBooks() {
     const bookList = document.getElementById('bookList');
     bookList.innerHTML = ''; // Clear existing book list
 
-     
+    books.forEach(book => { 
         const bookElement = document.createElement('div');
         bookElement.innerHTML = `
-            <h2>Added Successfully</h2>
+            <h2>Added Successfully :${book.title}</h2>
         `;
         bookList.appendChild(bookElement);
-    
+    });
 }
 // Function to fetch and display all books from the server
 function showAllBooks() {
