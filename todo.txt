@@ -1,0 +1,4 @@
+- Create new python env: python3 -m venv testenv
+- Activate myenv: testenv\Scripts\activate
+- install redis package: pip install redis
+- Pull and install the redis image: docker run -p 6379:6379 redis (IMPORTANT: map the ports!!)
